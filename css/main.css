@@ -1,0 +1,83 @@
+/* Cores para todo o site - Global Color */
+:root {
+    --default-color: #e7e7e7; /* Cor Texto */ 
+    --background-color: #444; /* Cor Fundo */
+    --heading-color: #1c1a1a; /* Cor Títulos */
+    --accent-color: #0e7adf; /* Destaque e ícones */
+    --surface-color: #bbb4b4; /* Fundos destaques */
+    --contrast-color: #444; /* Cor de Contraste para Texto */
+
+}
+
+/* Nav Menu Color */
+:root {
+    --nav-color: #fff; /* Cor Texto Nav Menu */
+    --nav-hover-color: #428bca; /* Cor Hover Nav Menu */
+    --nav-dropdown-bg-color: #fff; /* Cor Fundo Dropdown Nav Menu */
+    --nav-dropdown-hover: #428bca; /* Cor Hover Dropdown Nav Menu */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--default-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 55%);
+    text-decoration: none;
+}
+
+/* header */
+.header {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+.header .logo {
+    line-height: 1;
+}
+
+/* LOGO da empresa */
+.header .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.scrolled .header {
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+    --background-color: rgba(0, 0, 0, 0.85); 
+}
+
+@media (min-width: 1200px) {
+    .navmenu {
+        padding: 0;
+    }
+
+    .navmenu ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .navmenu li {
+        position: relative;
+    }
+
+    .navmenu a,
+    .navmenu a:focus {
+        color: var(--nav-color);
+    }
+}
