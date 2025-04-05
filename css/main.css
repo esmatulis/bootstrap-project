@@ -116,9 +116,33 @@ a:hover {
         padding: 10px 0;
         display: block;
         position: absolute;
-        visibility: hidden;
+        visibility: hidden; /*  */
         left: 14px;
         top: 130%;
-        opacity: 0;
+        opacity: 0; /*  */
+        border-radius: 4px;
+        z-index: 99;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     }
+
+    .navmenu .dropdown ul li {
+        width: 200px;
+    }
+
+    .navmenu .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-transform: none;
+        color: var(--default-color);
+    }
+
+    .navmenu .dropdown:hover>ul {
+        left: -90%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* Menu Mobile */
+@media (max-width: 1199px) {
 }
