@@ -12,7 +12,6 @@
     /* Fundos destaques */
     --contrast-color: #444;
     /* Cor de Contraste para Texto */
-
 }
 
 /* Nav Menu Color */
@@ -25,6 +24,10 @@
     /* Cor Fundo Dropdown Nav Menu */
     --nav-dropdown-hover-color: #428bca;
     /* Cor Hover Dropdown Nav Menu */
+
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-color: #444444;
+    --nav-dropdown-background-color: #ffffff;
 
 }
 
@@ -46,7 +49,10 @@ a:hover {
 
 /* header */
 .header {
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
     color: var(--default-color);
+    --background-color: rgba(0, 0, 0, 0);
     background-color: var(--background-color);
     padding: 15px 0;
     transition: all 0.5s;
@@ -128,6 +134,7 @@ a:hover {
         display: block;
         position: absolute;
         visibility: hidden;
+        background: var(--nav-dropdown-background-color);
         /*  */
         left: 14px;
         top: 130%;
@@ -146,7 +153,7 @@ a:hover {
         padding: 10px 20px;
         font-size: 15px;
         text-transform: none;
-        color: var(--default-color);
+        color: var(--nav-dropdown-color);
     }
 
     .navmenu .dropdown:hover>ul {
