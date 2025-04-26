@@ -674,3 +674,40 @@ section,
       opacity: 0;
     }
 }
+
+/* Stats */
+.stats .stats-item {
+    padding: 30px;
+    width: 100%;
+}
+
+.stats {
+    background-color: #fbfbfb;
+}
+
+.stats .stats-item i {
+    color: var(--accent-color);
+    display: block;
+    font-size: 44px;
+    float: left;
+    line-height: 0; /* centraliza o icone verticalmente */
+}
+
+/* span = .purecounter */
+.stats .stats-item .purecounter {
+    color: var(--contrast-color);
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    /* font-family: "Poppins", sans-serif; */
+    margin-left: 60px;
+}
+
+.stats .stats-item p {
+    color: var(--contrast-color);
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: var(--font-title);
+    font-size: 14px;
+}
