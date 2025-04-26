@@ -694,7 +694,7 @@ section,
 }
 
 /* span = .purecounter */
-.stats .stats-item .purecounter {
+.stats .stats-item .pc {
     color: var(--contrast-color);
     font-size: 48px;
     line-height: 40px;
