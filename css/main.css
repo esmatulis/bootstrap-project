@@ -44,11 +44,11 @@ Roboto:
 /* Cores para todo o site - Global Color */
 :root {
     /* Cor Texto */
-    --default-color: ##444;
+    --default-color: #444;
     /* Cor Fundo */
     --background-color: #fff;
     /* Cor Títulos */
-    --heading-color: #e7e7e7;
+    --heading-color: #394047;
     /* Destaque e ícones */
     --accent-color: #0e7adf;
     /* Fundos destaques */
@@ -715,6 +715,63 @@ section,
     font-size: 14px;
 }
 
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+    position: relative;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .services .service-item .icon {
+    margin-right: 20px;
+  }
+  
+  .services .service-item .icon i {
+    color: var(--accent-color);
+    font-size: 40px;
+    line-height: 0;
+    transition: 0.3s;
+  }
+  
+  .services .service-item:hover .icon i {
+    color: var(--accent-color);
+  }
+  
+  .services .service-item .title {
+    color: var(--heading-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  
+  .services .service-item .description {
+    font-size: 15px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-bottom: 10px;
+  }
+  
+  .services .service-item .readmore {
+    display: flex;
+    align-items: center;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .services .service-item .readmore i {
+    margin-left: 8px;
+  }
+  
+  .services .service-item:hover .title,
+  .services .service-item:hover .readmore,
+  .services .service-item:hover .icon i {
+    color: var(--accent-color);
+  }
+  
 
 
 
@@ -731,7 +788,21 @@ section,
 
 
 
-
+  .section-title div {
+    color: var(--heading-color);
+    margin: 10px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+.section-title div .description-title {
+    color: var(--accent-color);
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
