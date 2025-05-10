@@ -774,7 +774,35 @@ section,
   }
   
 
+  .scroll-top {
+    position: fixed;
+    background-color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    z-index: 99999;
+    bottom: 15px;
+    right: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+  }
 
+
+  .scroll-top i {
+    font-size: 24px;
+    color: var(--nav-color);
+  }
+
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .scroll-top:hover {
+    background-color: #2292fbe5;
+    transition: all .2s ease-in-out;
+  }
 
 
 
