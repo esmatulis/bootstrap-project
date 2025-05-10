@@ -899,8 +899,13 @@ section,
     inset: 0;
     z-index: 3;
     transition: all .3s ease-in-out;
-    background-color: #0606063e;
+    background-color: #06060683;
     padding: 15px;
+    opacity: 0;
+}
+
+.portfolio .portfolio-content:hover .portfolio-info {
+    opacity: 1;
 }
 
 .portfolio .portfolio-content:hover img {
@@ -913,7 +918,14 @@ section,
     font-size: 26px;
     color: var(--nav-color);
     left: calc(50% - 40px);
-    top: ;
+    top: calc(50% - 14px);
+    line-height: 1.2;
+}
+
+.portfolio .portfolio-content .portfolio-info .details-link {
+    left: 50%;
+    line-height: 0;
+    font-size: 34px;
 }
 
 /* Scroll-top */
