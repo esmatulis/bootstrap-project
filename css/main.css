@@ -723,58 +723,59 @@ section,
     position: relative;
     height: 100%;
     margin-bottom: 30px;
-  }
-  
-  .services .service-item .icon {
+}
+
+.services .service-item .icon {
     margin-right: 20px;
-  }
-  
-  .services .service-item .icon i {
+}
+
+.services .service-item .icon i {
     color: var(--accent-color);
     font-size: 40px;
     line-height: 0;
     transition: 0.3s;
-  }
-  
-  .services .service-item:hover .icon i {
+}
+
+.services .service-item:hover .icon i {
     color: var(--accent-color);
-  }
-  
-  .services .service-item .title {
+    transition: all .2 ease-in;
+}
+
+.services .service-item .title {
     color: var(--heading-color);
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 20px;
     transition: 0.3s;
-  }
-  
-  .services .service-item .description {
+}
+
+.services .service-item .description {
     font-size: 15px;
     color: color-mix(in srgb, var(--default-color), transparent 30%);
     margin-bottom: 10px;
-  }
-  
-  .services .service-item .readmore {
+}
+
+.services .service-item .readmore {
     display: flex;
     align-items: center;
     color: color-mix(in srgb, var(--default-color), transparent 50%);
     transition: 0.3s;
     font-weight: 700;
     font-size: 14px;
-  }
-  
-  .services .service-item .readmore i {
-    margin-left: 8px;
-  }
-  
-  .services .service-item:hover .title,
-  .services .service-item:hover .readmore,
-  .services .service-item:hover .icon i {
-    color: var(--accent-color);
-  }
-  
+}
 
-  .scroll-top {
+.services .service-item .readmore i {
+    margin-left: 8px;
+}
+
+.services .service-item:hover .title,
+.services .service-item:hover .readmore,
+.services .service-item:hover .icon i {
+    color: var(--accent-color);
+}
+
+
+.scroll-top {
     position: fixed;
     background-color: var(--accent-color);
     width: 40px;
@@ -786,47 +787,48 @@ section,
     visibility: hidden;
     opacity: 0;
     transition: all .4s ease-in-out;
-  }
+}
 
 
-  .scroll-top i {
+.scroll-top i {
     font-size: 24px;
     color: var(--nav-color);
-  }
+}
 
-  .scroll-top.active {
+.scroll-top.active {
     visibility: visible;
     opacity: 1;
-  }
+}
 
-  .scroll-top:hover {
+.scroll-top:hover {
     background-color: #2292fbe5;
     transition: all .2s ease-in-out;
-  }
+}
 
 
 
 
+@media (max-width: 1199px) {
 
+    section,
+    .section {
+        scroll-margin-top: 66px;
+    }
+}
 
-
-
-
-
-
-
-
-
-  .section-title div {
+.section-title div {
     color: var(--heading-color);
     margin: 10px 0 0 0;
     font-size: 32px;
     font-weight: 700;
     font-family: var(--heading-font);
 }
+
 .section-title div .description-title {
     color: var(--accent-color);
 }
+
+/* Global Title */
 .section-title {
     text-align: center;
     padding-bottom: 60px;
@@ -844,6 +846,7 @@ section,
     display: inline-block;
     letter-spacing: 1px;
     margin: 0;
+    font-family: var(--font-default);
 }
 
 /*--------------------------------------------------------------
