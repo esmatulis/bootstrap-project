@@ -964,6 +964,26 @@ section,
     font-size: 34px;
 }
 
+/*--------------------------------------------------------------
+# Feedback Section
+--------------------------------------------------------------*/
+.feedbacks .feedback-item {
+    background-color: #fafafa;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.1);
+    padding: 30px;
+    position: relative;
+    height: 100%;
+}
+
+.feedbacks .feedback-item .feedback-img {
+    width: 90px;
+    border-radius: 50px;
+    border: 6px solid #fafafa;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+
 /* Scroll-top */
 
 .scroll-top {
