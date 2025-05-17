@@ -827,7 +827,7 @@ section,
 # Call to Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-    padding: 150px 0;
+    padding: 130px 0;
     position: relative;
     clip-path: inset(0);
 }
@@ -843,12 +843,47 @@ section,
     z-index: 1;
 }
 
+.call-to-action h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
 .call-to-action:before {
     content: "";
-    background: color-mix(in srgb, var(--background-color), transparent 30%);
+    background-color: color-mix(in srgb, var(--background-color), transparent 30%);
     position: absolute;
     inset: 0;
-    z-index: 2;
+    z-index: 2;  /*Sobreposição*/
+}
+
+.call-to-action .container{
+    position: relative;
+    z-index: 3;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+.call-to-action .cta-btn {
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 5px;
+    transition: .5s;
+    margin: 10px;
+}
+
+.call-to-action .cta-btn:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
@@ -1030,4 +1065,73 @@ section,
     display: inline-block;
     padding-right: 10px;
     color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Faixa de rolagem */
+/* .scrolling-track {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0; *//* Remove a margem */
+    /*padding: 0; */ /* Remove o padding */
+    /*background: black;
+    color: black;
+} */
+
+/* Faixa de rolagem */
+/* .scrolling-track:hover {
+    color: white;
+}
+
+/* Área com conteúdo rolando */
+/* .scrolling-content {
+    display: flex;
+    animation: scroll-left 3s linear infinite;
+    margin: 0; /* Remove a margem */
+    /*padding: 0; /* Remove o padding */
+/*}*/
+
+/* Blocos individuais */
+/* .scroll-item {
+    flex: 0 0 auto;
+    width: 50%; /* 4 itens visíveis por vez (col-md-3 equivalente) */
+  /*  padding: 0px;
+    text-align: center;
+    text-wrap: nowrap;
+    overflow: hidden;
+}*/
+
+/* .scroll-item h3, .scroll-item1 h3 {
+    font-size: 40px;
+}*/
+
+/* Animação contínua */
+/* @keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
