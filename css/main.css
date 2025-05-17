@@ -862,10 +862,10 @@ section,
     z-index: 3;
 }
 
-.call-to-action p {
+/* .call-to-action p {
     font-size: 18px;
     margin-top: 45px;
-}
+} */
 
 .call-to-action .cta-btn {
     font-family: var(--font-title);
@@ -882,8 +882,8 @@ section,
 }
 
 .call-to-action .cta-btn:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 20%);
-    color: var(--contrast-color);
+    background: var(--accent-color);
+    color: var(--contrast-color);border: 2px solid var(--accent-color);
 }
 
 /*--------------------------------------------------------------
