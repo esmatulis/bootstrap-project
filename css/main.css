@@ -1010,16 +1010,25 @@ section,
 
 .feedbacks .feedback-item .quote-icon-left {
     display: inline-block;
-    left: -5px;
-    position: relative;
+    /* left: -5px; */
+    /* position: relative; */
 }
 
 .feedbacks .feedback-item .quote-icon-right {
     display: inline-block; /* permitir transformação e dimensão */
-    right: -15px; 
-    position: relative;
-    top: 10px;
+    /* right: -15px;  */
+    /* position: relative; */
+    /* top: 10px; */
     transform: scale(-1, -1); /* inverter o elemento horizontal e vertical */
+}
+
+.feedbacks .feedback-item p {
+    /* font-style: italic; */
+    margin: 25px 0 0 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px; /* espaço entre os elementos */
 }
 
 
