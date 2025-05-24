@@ -1000,6 +1000,10 @@ section,
     margin-bottom: 0 1px;
 }
 
+.feedbacks .feedback-item .stars i.star-gray {
+    color: rgb(219, 219, 219);
+}
+
 .feedbacks .feedback-item .quote-icon-left,
 .feedbacks .feedback-item .quote-icon-right {
     color: var(--accent-color);
