@@ -1129,7 +1129,7 @@ section,
     background: 
  color-mix(in srgb, var(--default-color), transparent 96%);
     padding: 30px;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .contact .info-item i {
@@ -1183,7 +1183,9 @@ section,
 }
 
 .contact .email-form button[type=submit]:hover {
-    
+    background: #428bcadb;
+    border: none;
+    color: #cbdff1;
 }
 
 /* Scroll-top */
